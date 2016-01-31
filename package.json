@@ -1,0 +1,23 @@
+{
+  "name": "build-box",
+  "version": "0.1.0",
+  "description": "build and run a graph of docker containers",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sessions-io/build-box.git"
+  },
+  "author": "jeff@sessions.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sessions-io/build-box/issues"
+  },
+  "homepage": "https://github.com/sessions-io/build-box#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4"
+  }
+}

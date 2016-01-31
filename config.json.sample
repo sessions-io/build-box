@@ -1,0 +1,10 @@
+{
+  "branch": "master",
+  "build_file": "build.json",
+  "github": {
+    "hook_secret": "blahblah",
+  },
+  "private_registry": {
+
+  }
+}
