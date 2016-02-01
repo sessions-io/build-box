@@ -1,11 +1,37 @@
 {
-  "branch": "master",
-  "build_file": "build.json",
-  "github": {
-    "hook_secret": "blahblah",
-    "personal_token": ""
+  "name": "<name your build-box!>",
+  "mail": { 
+    "sendgrid_token": "<sendgrid api token generated in panel>",
+    "from": "<mail address where mail will be from>",
+    "to": "<mail address to send completions and errors>",
+    "completions": true
   },
-  "private_registry": {
-
+  "github": {
+	  "repo": "manifest",
+	  "branch": "master",
+	  "build_file": "build.json",
+    "hook_secret": "<your secret set in github settings panel>",
+    "personal_token": "<a github personal oauth token from github settings panel>"
+  },
+  "public_registries": {
+  	"quay.io": {
+  		"username": "<your quay username>",
+  		"password": "<your quay password>"
+  	},
+  	"hub.docker.com": { 
+  		"username": "<your docker hub username>",
+  		"password": "<your docker hub password>"
+  	}
+  },
+  "private_registries": {
+  	"gcr.io" { 
+      "namespace: "cloud project name",
+      "username": "_token",
+      "password": "<token generated from gcloud tool>",
+    },
+    "<aws docker registry id>.dkr.ecr.us-east-1.amazonaws.com": { 
+      "username": "AWS",
+      "password": "<token from running aws cli command>"
+    }
   }
 }

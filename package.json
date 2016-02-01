@@ -18,6 +18,8 @@
   "homepage": "https://github.com/sessions-io/build-box#readme",
   "dependencies": {
     "body-parser": "^1.14.2",
-    "express": "^4.13.4"
+    "dockerode": "^2.2.9",
+    "express": "^4.13.4",
+    "sendgrid": "^2.0.0"
   }
 }
