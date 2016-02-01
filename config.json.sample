@@ -7,24 +7,24 @@
     "completions": true
   },
   "github": {
-	  "repo": "manifest",
-	  "branch": "master",
-	  "build_file": "build.json",
+    "repo": "manifest",
+    "branch": "master",
+    "build_file": "build.json",
     "hook_secret": "<your secret set in github settings panel>",
     "personal_token": "<a github personal oauth token from github settings panel>"
   },
   "public_registries": {
-  	"quay.io": {
-  		"username": "<your quay username>",
-  		"password": "<your quay password>"
-  	},
-  	"hub.docker.com": { 
-  		"username": "<your docker hub username>",
-  		"password": "<your docker hub password>"
-  	}
+    "quay.io": {
+      "username": "<your quay username>",
+      "password": "<your quay password>"
+    },
+    "hub.docker.com": { 
+      "username": "<your docker hub username>",
+      "password": "<your docker hub password>"
+    }
   },
   "private_registries": {
-  	"gcr.io" { 
+    "gcr.io" { 
       "namespace: "cloud project name",
       "username": "_token",
       "password": "<token generated from gcloud tool>",
